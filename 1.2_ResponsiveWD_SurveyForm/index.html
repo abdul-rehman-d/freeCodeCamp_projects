@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Sattar Edhi Tribute</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <!-- name -->
+            <div class="input-div one-line">
+                <label id="name-label" for="name">Name</label>
+                <input placeholder="Enter your name" type="text" name="name" id="name" required>
+            </div>
+
+            <!-- email -->
+            <div class="input-div one-line">
+                <label id="email-label" for="email">Email</label>
+                <input placeholder="Enter your email" type="email" name="email" id="email" required>
+            </div>
+
+            <!-- number -->
+            <div class="input-div one-line">
+                <label id="number-label" for="number">Number</label>
+                <input placeholder="Enter your phone number" type="number" name="number" min="10000000000" max="99999999999" id="number">
+            </div>
+
+            <!-- dropdown -->
+            <div class="input-div one-line">
+                <label id="dropdown-label" for="dropdown">Pick your qualification</label>
+                <select name="qualification" id="dropdown">
+                  <option value="high_school">High School Graduate</option>
+                  <option value="university">College/University Graduate</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- radio -->
+            <div class="input-div">
+                <p>Pick your area of interest</p>
+                <input type="radio" id="frontend" name="area" value="frontend">
+                <label for="frontend"> Frontend Development</label>
+                <br>
+                <input type="radio" id="backend" name="area" value="backend">
+                <label for="backend"> Backend Development</label>
+                <br>
+                <input type="radio" id="fullstack" name="area" value="fullstack">
+                <label for="fullstack"> Full Stack Development</label>
+            </div>
+
+            <!-- checkbox -->
+            <div class="input-div">
+                <p>Which programming languages have you learnt with us?</p>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html"> HTML</label>
+                <br>
+                <input type="checkbox" id="css" name="css" value="css">
+                <label for="css"> CSS</label>
+                <br>
+                <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                <label for="javascript"> Javascript</label>
+                <br>
+                <input type="checkbox" id="python" name="python" value="python">
+                <label for="python"> Python</label>
+            </div>
+
+            <!-- comment -->
+            <div class="input-div">
+                <label id="comment-label" for="comment">Additional Comments to help us improve</label>
+                <br>
+                <textarea name="comment" id="comment" rows="4">Please enter your additional comments</textarea>
+            </div>
+
+            <!-- submit btn -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>

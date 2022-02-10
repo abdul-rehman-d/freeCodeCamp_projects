@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: georgia;
+}
+body {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: #C8F2EF;
+}
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 2em;
+  gap: 2em;
+  margin: 2em
+}
+form {
+  display: grid;
+  gap: 1em;
+  line-height: 1.6;
+}
+form textarea {
+  width: 100%;
+}
+
+.one-line {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media(min-width: 550px){
+  label, p {
+    font-size: 1em;
+  }
+  .one-line {
+    grid-template-columns: 1fr 1fr;
+  }
+}
