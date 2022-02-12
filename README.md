@@ -4,3 +4,5 @@ It contains projects from these certifications:-
 ## Responsive Web Design
 I learned HTML, CSS and basics of creating a responsive websites and made following projects:  
 1. Tribute Page
+1. Survey Form
+1. Product Landing Page
