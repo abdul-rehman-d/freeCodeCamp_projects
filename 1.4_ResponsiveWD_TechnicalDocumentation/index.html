@@ -85,26 +85,26 @@
                         <br>Enter <i>python</i> the command line.
                         <br>Start coding right away in the interactive interpreter.
                     </p>
-                    <code>
+                   <div class="code-div"><code>
                         $python # Unix/Linux
                         <br>or
                         <br>python% # Unix/Linux
                         <br>or
                         <br>C:> python # Windows/DOS
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h2>Running a .py Python File</h2>
                     <p>
                         A Python script is a python file with an extension of <i>.py</i> and it is just a text file with python code inside. It can be executed at command line by invoking the interpreter on your application, as in the following
                     </p>
-                    <code>
+                    <div class="code-div"><code>
                         $python script.py # Unix/Linux
                         <br>or
                         <br>python% script.py # Unix/Linux
                         <br>or
                         <br>C:> python script.py # Windows/DOS
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h2>Running it on Integrated Development Environment</h2>
@@ -130,12 +130,12 @@
             <p>
                 You can display any text on the console using the built-in <i>print()</i> function. Whatever you want to print goes inside the bracket.<br>A normal English sentence is nothing more than a string data type <a href="#strings">(later mentioned)</a> and hence, should be inside single or double qoutation marks <i>("" or '').</i> All together should look like this:
             </p>
-            <code>print("Hello, World!")</code>
+            <div class="code-div"><code>print("Hello, World!")</code></div>
             <h2>Input</h2>
             <p>
                 You can take any input from the user using the built-in <i>input()</i> function. You can give an inside its brackets just like with the <i>print()</i> function. When you take any input, you have to store it inside your program, as well, to use the given information to perform something. This is where variables <a href="#Variables">(later mentioned)</a> come into play. All together you can take input like:
             </p>
-            <code>var = input("Enter something: ")</code>
+            <div class="code-div"><code>var = input("Enter something: ")</code></div>
         </section>
 
         <section id="Variables" class="main-section">
@@ -147,17 +147,17 @@
                 <br>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
                 <br>You can assign variables like:
             </p>
-            <code>
+            <div class="code-div"><code>
                 counter = 100
                 <br>miles   = 1000.0
                 <br>name    = "John"
-            </code>
+            </code></div>
             <p>
                 Python allows you to assign a single value to several variables simultaneously. For example:
             </p>
-            <code>
+            <div class="code-div"><code>
                 a,b,c = 1,2,"john"
-            </code>
+            </code></div>
         </section>
 
         <section id="Data_Types" class="main-section">
@@ -171,44 +171,44 @@
                 <li>
                     <h3>Numbers</h3>
                     <p>Number data types store numeric values, integer or floating decimal point. Number objects are created when you assign a value to them. For example</p>
-                    <code>
+                    <div class="code-div"><code>
                         var1 = 1
                         <br>var2 = 10.2
-                    </code>
+                    </code></div>
                 </li>
-                <li>
+                <li id="string">
                     <h3>Strings</h3>
                     <p>Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. String objects are created when you assign a value to them. For example</p>
-                    <code>
+                    <div class="code-div"><code>
                         var1 = "hello"
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h3>List</h3>
                     <p>Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]).</p>
-                    <code>
+                    <div class="code-div"><code>
                         list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
                         <br>tinylist = [123, 'john']
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h3>Tuple</h3>
                     <p>A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.</p>
-                    <code>
+                    <div class="code-div"><code>
                         tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )
                         <br>tinytuple = (123, 'john')
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h3>Dictionary</h3>
                     <p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
                         <br>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example:
                     </p>
-                    <code>
+                    <div class="code-div"><code>
                         dict = {}
                         <br>dict['one'] = "This is one"
                         <br>dict[2]     = "This is two"
-                    </code>
+                    </code></div>
                 </li>
             </ul>
         </section>
@@ -221,7 +221,7 @@
                 Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.
                 <br>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.
             </p>
-            <code>
+            <div class="code-div"><code>
                 var = 100
                 <br>if ( var == 100 ) :
                 <br><span>print("Value of expression is 100")</span>
@@ -229,7 +229,7 @@
                 <br><span>print("Value of expression is 50")</span>
                 <br>else :
                 <br><span>print("Value of expression is neither 100 nor 50")</span>
-            </code>
+            </code></div>
         </section>
 
         <section id="Loops" class="main-section">
@@ -244,18 +244,18 @@
                 <li>
                     <h3>for loop</h3>
                     <p>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p>
-                    <code>
+                    <div class="code-div"><code>
                         for iterating_var in sequence:
                         <br><span>statements(s)</span>
-                    </code>
+                    </code></div>
                 </li>
                 <li>
                     <h3>while loop</h3>
                     <p>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</p>
-                    <code>
+                    <div class="code-div"><code>
                         while expression:
                         <br><span>statements(s)</span>
-                    </code>
+                    </code></div>
                 </li>
             </ul>
         </section>
