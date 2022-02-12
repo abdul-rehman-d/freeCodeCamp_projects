@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fCC Techniocal Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>
+                Python Documentation
+            </header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">
+                        Introduction
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Running_Python_Code">
+                        Running Python Code
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Input_Output">
+                        Input Output
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables">
+                        Variables
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Data_Types">
+                        Data Types
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Control_Statements">
+                        Control Statements
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Loops">
+                        Loops
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#References">
+                        References
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="Introduction" class="main-section">
+            <header>
+                Introduction
+            </header>
+            <p>
+                Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+            </p>
+
+            <p>
+                Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+            </p>
+        </section>
+
+        <section id="Running_Python_Code" class="main-section">
+            <header>
+                Running Python Code
+            </header>
+            <p>
+                There are multiple ways of running Python code:
+            </p>
+
+            <ul>
+                <li>
+                    <h2>Using Python Interpreter</h2>
+                    <p>
+                        You can start Python from Unix, DOS, or any other system that provides you a command-line interpreter or shell window.
+                        <br>Enter <i>python</i> the command line.
+                        <br>Start coding right away in the interactive interpreter.
+                    </p>
+                    <code>
+                        $python # Unix/Linux
+                        <br>or
+                        <br>python% # Unix/Linux
+                        <br>or
+                        <br>C:> python # Windows/DOS
+                    </code>
+                </li>
+                <li>
+                    <h2>Running a .py Python File</h2>
+                    <p>
+                        A Python script is a python file with an extension of <i>.py</i> and it is just a text file with python code inside. It can be executed at command line by invoking the interpreter on your application, as in the following
+                    </p>
+                    <code>
+                        $python script.py # Unix/Linux
+                        <br>or
+                        <br>python% script.py # Unix/Linux
+                        <br>or
+                        <br>C:> python script.py # Windows/DOS
+                    </code>
+                </li>
+                <li>
+                    <h2>Running it on Integrated Development Environment</h2>
+                    <p>
+                        You can run Python from a Graphical User Interface (GUI) environment as well, if you have a GUI application on your system that supports Python. Few examples of an IDE are:
+                    </p>
+                    <ul>
+                        <li>Python's default IDLE</li>
+                        <li>Visual Studio Code</li>
+                        <li>Sublime Text</li>
+                        <li>Atom</li>
+                        <li>Pycharm</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Input_Output" class="main-section">
+            <header>
+                Input Output
+            </header>
+            <h2>Output</h2>
+            <p>
+                You can display any text on the console using the built-in <i>print()</i> function. Whatever you want to print goes inside the bracket.<br>A normal English sentence is nothing more than a string data type <a href="#strings">(later mentioned)</a> and hence, should be inside single or double qoutation marks <i>("" or '').</i> All together should look like this:
+            </p>
+            <code>print("Hello, World!")</code>
+            <h2>Input</h2>
+            <p>
+                You can take any input from the user using the built-in <i>input()</i> function. You can give an inside its brackets just like with the <i>print()</i> function. When you take any input, you have to store it inside your program, as well, to use the given information to perform something. This is where variables <a href="#Variables">(later mentioned)</a> come into play. All together you can take input like:
+            </p>
+            <code>var = input("Enter something: ")</code>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>
+                Variables
+            </header>
+            <p>
+                Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
+                <br>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
+                <br>You can assign variables like:
+            </p>
+            <code>
+                counter = 100
+                <br>miles   = 1000.0
+                <br>name    = "John"
+            </code>
+            <p>
+                Python allows you to assign a single value to several variables simultaneously. For example:
+            </p>
+            <code>
+                a,b,c = 1,2,"john"
+            </code>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>
+                Data Types
+            </header>
+            <p>
+                Python has five standard data types:
+            </p>
+            <ul>
+                <li>
+                    <h3>Numbers</h3>
+                    <p>Number data types store numeric values, integer or floating decimal point. Number objects are created when you assign a value to them. For example</p>
+                    <code>
+                        var1 = 1
+                        <br>var2 = 10.2
+                    </code>
+                </li>
+                <li>
+                    <h3>Strings</h3>
+                    <p>Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. String objects are created when you assign a value to them. For example</p>
+                    <code>
+                        var1 = "hello"
+                    </code>
+                </li>
+                <li>
+                    <h3>List</h3>
+                    <p>Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]).</p>
+                    <code>
+                        list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+                        <br>tinylist = [123, 'john']
+                    </code>
+                </li>
+                <li>
+                    <h3>Tuple</h3>
+                    <p>A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.</p>
+                    <code>
+                        tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )
+                        <br>tinytuple = (123, 'john')
+                    </code>
+                </li>
+                <li>
+                    <h3>Dictionary</h3>
+                    <p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+                        <br>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example:
+                    </p>
+                    <code>
+                        dict = {}
+                        <br>dict['one'] = "This is one"
+                        <br>dict[2]     = "This is two"
+                    </code>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Control_Statements" class="main-section">
+            <header>
+                Control Statements
+            </header>
+            <p>
+                Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.
+                <br>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.
+            </p>
+            <code>
+                var = 100
+                <br>if ( var == 100 ) :
+                <br><span>print("Value of expression is 100")</span>
+                <br>elif (var == 50) :
+                <br><span>print("Value of expression is 50")</span>
+                <br>else :
+                <br><span>print("Value of expression is neither 100 nor 50")</span>
+            </code>
+        </section>
+
+        <section id="Loops" class="main-section">
+            <header>
+                Loops
+            </header>
+            <p>
+                In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.
+                <br>A loop statement allows us to execute a statement or group of statements multiple times.
+            </p>
+            <ul>
+                <li>
+                    <h3>for loop</h3>
+                    <p>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p>
+                    <code>
+                        for iterating_var in sequence:
+                        <br><span>statements(s)</span>
+                    </code>
+                </li>
+                <li>
+                    <h3>while loop</h3>
+                    <p>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</p>
+                    <code>
+                        while expression:
+                        <br><span>statements(s)</span>
+                    </code>
+                </li>
+            </ul>
+        </section>
+
+        <section id="References" class="main-section">
+            <header>
+                References
+            </header>
+            <ul>
+                <li>
+                    <a href="https://docs.python.org/3/" target="_blank">Python's official Documentation</a>.
+                </li>
+                <li>
+                    <a href="https://www.tutorialspoint.com/python/" target="_blank">tutorialspoint's Python tutorial</a>.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
