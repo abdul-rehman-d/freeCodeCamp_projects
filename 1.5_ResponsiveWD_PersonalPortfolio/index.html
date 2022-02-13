@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fCC Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#welcome-section">Home</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -22,26 +23,34 @@
     </section>
 
     <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+        </div>
         <div class="projects">
-            <a href="" target="_blank">
-                <img src="" alt="Product Landing Page">
+            <a class="project-tile" href="https://codepen.io/abdul-rehman-d/full/oNoWamW" target="_blank">
+                <img src="https://github.com/abdul-rehman-d/freeCodeCamp_projects/blob/master/1.5_ResponsiveWD_PersonalPortfolio/assests/productLanding.png?raw=true" alt="Product Landing Page">
+                <p>Product Landing Page</p>
             </a>
-            <a href="" target="_blank">
-                <img src="" alt="">
+            <a class="project-tile" href="https://codepen.io/abdul-rehman-d/full/abVyzVG" target="_blank">
+                <img src="https://github.com/abdul-rehman-d/freeCodeCamp_projects/blob/master/1.5_ResponsiveWD_PersonalPortfolio/assests/technicalDocumentation.png?raw=true" alt="Technical Documentation Page">
+                <p>Technical Documentation</p>
             </a>
-            <a href="" target="_blank">
-                <img src="" alt="">
+            <a class="project-tile" href="https://codepen.io/abdul-rehman-d/full/OJOmgQe" target="_blank">
+                <img src="https://github.com/abdul-rehman-d/freeCodeCamp_projects/blob/master/1.5_ResponsiveWD_PersonalPortfolio/assests/tributePage.png?raw=true" alt="Tribute Page">
+                <p>Tribute Page</p>
             </a>
-            <a href="" target="_blank">
-                <img src="" alt="">
+            <a class="project-tile" href="https://codepen.io/abdul-rehman-d/full/OJOmvrL" target="_blank">
+                <img src="https://github.com/abdul-rehman-d/freeCodeCamp_projects/blob/master/1.5_ResponsiveWD_PersonalPortfolio/assests/surveyForm.png?raw=true" alt="Survey Form">
+                <p>Survey Form</p>
             </a>
+        </div>
+        <div class="container">
+            <a id="profile-link" href="https://www.freecodecamp.org/abdul-rehman-d" target="_blank"></a>
         </div>
     </section>
 
-    <section id="contact">
-
-    </section>
-
-    <footer></footer>
+    <footer>
+        <p>&copy; 2022 Abdul Rehman Daniyal</p>
+    </footer>
 </body>
 </html>
